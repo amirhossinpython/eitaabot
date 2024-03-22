@@ -1,0 +1,135 @@
+EitaaBot Class Documentation
+=============================
+
+This class represents an Eitaa Bot and provides methods for interacting with the Eitaa Bot API.
+
+Class Initialization:
+---------------------
+EitaaBot(token)
+    Initializes an instance of the EitaaBot class.
+
+    Parameters:
+        - token (str): The Eitaa Bot API token.
+
+Methods:
+--------
+1. send_message(chat_id, message)
+    Sends a message to the specified chat.
+
+    Parameters:
+        - chat_id (str): The ID of the chat.
+        - message (str): The text message to be sent.
+
+    Returns:
+        - response (dict): The JSON response from the server.
+
+2. send_photo(chat_id, photo_path, caption=None, date=None)
+    Sends a photo to the specified chat.
+
+    Parameters:
+        - chat_id (str): The ID of the chat.
+        - photo_path (str): The path to the photo file.
+        - caption (str): Optional. The caption for the photo.
+        - date (str): Optional. The date of the photo.
+
+    Returns:
+        - response (dict): The JSON response from the server.
+
+3. send_file(chat_id, file_path, title=None, caption=None, date=None)
+    Sends a file to the specified chat.
+
+    Parameters:
+        - chat_id (str): The ID of the chat.
+        - file_path (str): The path to the file.
+        - title (str): Optional. The title of the file.
+        - caption (str): Optional. The caption for the file.
+        - date (str): Optional. The date of the file.
+
+    Returns:
+        - response (dict): The JSON response from the server.
+
+4. get_bot_info()
+    Retrieves information about the bot.
+
+    Returns:
+        - response (dict): The JSON response from the server.
+
+5. send_document(chat_id, document_path, caption=None, date=None)
+    Sends a document to the specified chat.
+
+    Parameters:
+        - chat_id (str): The ID of the chat.
+        - document_path (str): The path to the document file.
+        - caption (str): Optional. The caption for the document.
+        - date (str): Optional. The date of the document.
+
+    Returns:
+        - response (dict): The JSON response from the server.
+
+کلاس EitaaBot
+=============================
+
+این کلاس یک ربات ایتا را نماینده می‌کند و امکاناتی برای ارتباط با API ربات ایتا را فراهم می‌کند.
+
+مقداردهی اولیه کلاس:
+---------------------
+EitaaBot(token)
+    یک نمونه از کلاس EitaaBot را مقداردهی اولیه می‌کند.
+
+    پارامترها:
+        - token (str): توکن API ربات ایتا.
+
+متدها:
+--------
+1. send_message(chat_id, message)
+    پیامی را به گفتگوی مشخص شده ارسال می‌کند.
+
+    پارامترها:
+        - chat_id (str): شناسه گفتگو.
+        - message (str): متن پیامی که ارسال می‌شود.
+
+    برگشت:
+        - response (dict): پاسخ JSON از سرور.
+
+2. send_photo(chat_id, photo_path, caption=None, date=None)
+    یک عکس را به گفتگوی مشخص شده ارسال می‌کند.
+
+    پارامترها:
+        - chat_id (str): شناسه گفتگو.
+        - photo_path (str): مسیر فایل عکس.
+        - caption (str): اختیاری. عنوان برای عکس.
+        - date (str): اختیاری. تاریخ عکس.
+
+    برگشت:
+        - response (dict): پاسخ JSON از سرور.
+
+3. send_file(chat_id, file_path, title=None, caption=None, date=None)
+    یک فایل را به گفتگوی مشخص شده ارسال می‌کند.
+
+    پارامترها:
+        - chat_id (str): شناسه گفتگو.
+        - file_path (str): مسیر فایل.
+        - title (str): اختیاری. عنوان فایل.
+        - caption (str): اختیاری. عنوان برای فایل.
+        - date (str): اختیاری. تاریخ فایل.
+
+    برگشت:
+        - response (dict): پاسخ JSON از سرور.
+
+4. get_bot_info()
+    اطلاعات مربوط به ربات را دریافت می‌کند.
+
+    برگشت:
+        - response (dict): پاسخ JSON از سرور.
+
+5. send_document(chat_id, document_path, caption=None, date=None)
+    یک سند را به گفتگوی مشخص شده ارسال می‌کند.
+
+    پارامترها:
+        - chat_id (str): شناسه گفتگو.
+        - document_path (str): مسیر فایل سند.
+        - caption (str): اختیاری. عنوان برای سند.
+        - date (str): اختیاری. تاریخ سند.
+
+    برگشت:
+        - response (dict): پاسخ JSON از سرور.
