@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='eitaabot',
+    name='eitaa_bot',
     version='1.0.0',
     description='A Python package for interacting with Eitaa Bot API',
     long_description='A Python package that provides a convenient way to interact with Eitaa Bot API.',
